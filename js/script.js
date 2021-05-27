@@ -5,7 +5,7 @@
 
 
 var numKm = prompt('Quanti km vuoi percorrere?');
-var eta = prompt('Quanti hanni hai');
+var eta = parseInt(prompt('Quanti hanni hai'));
 var prezzo = numKm * 0.21
 
 if (eta < 18) {
@@ -15,4 +15,4 @@ else if (eta > 65) {
     prezzo *= 0.6;
 }
 
-alert('Il prezzo del biglietto è '+ (Math.round(prezzo * 100) / 100).toFixed(2) + '€');
+alert('Il prezzo del biglietto è '+ prezzo.toFixed(2) + '€');
