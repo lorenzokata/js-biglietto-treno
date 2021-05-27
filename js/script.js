@@ -15,4 +15,4 @@ else if (eta > 65) {
     prezzo *= 0.6;
 }
 
-alert('Il prezzo del biglietto è '+ prezzo.toFixed(2) + '€');
+document.getElementById('prezzo').innerHTML = 'Il prezzo del biglietto è '+ prezzo.toFixed(2) + '€' ;
